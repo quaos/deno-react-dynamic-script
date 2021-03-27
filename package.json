@@ -1,0 +1,25 @@
+{
+  "name": "deno-react-dynamic-script",
+  "version": "1.0.0",
+  "description": "Deno+React Dynamic Script loading example",
+  "author": {
+    "name": "Chakrit W.",
+    "email": "quaos.qrz@gmail.com",
+    "url": "https://github.com/quaos/"
+  },
+  "repository": {
+    "github": "https://github.com/quaos/deno-react-dynamic-script"
+  },
+  "scripts": {
+    "build": "deno bundle --config tsconfig.json src/client.tsx public/assets/js/client.bundle.js",
+    "_build_denopack": "denopack -c denopack.config.ts",
+    "start": "deno run --allow-env --allow-net --allow-read --allow-run main.ts -- --browse serve",
+    "debug": "denon start",
+    "cache": "deno cache src/deps/*.ts"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "private": true
+}
